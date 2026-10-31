@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-container {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+#saudacao {
+    margin: 0 0 5px 0;
+}
+
+.data-hoje {
+    margin: 0 0 25px 0;
+    color: #aaa;
+    text-transform: capitalize;
+}
+
+/* Cards de resumo */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card-resumo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #333;
+}
+
+.card-rotulo {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.card-numero {
+    color: #4CAF50;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+/* Bloco da lista */
+.bloco-topo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.bloco-topo h3 {
+    margin: 0;
+}
+
+.botao-novo {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.botao-novo:hover {
+    background-color: #45a049;
+}
+
+/* Tabela */
+.tabela-container {
+    overflow-x: auto;
+    border: 1px solid #555;
+    border-radius: 15px;
+    background-color: #2b2b2b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #333;
+    color: #4CAF50;
+    font-size: 0.9em;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #333;
+}
+
+td.vazio {
+    text-align: center;
+    color: #aaa;
+    padding: 30px;
+}
+
+/* Selo de status */
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.status-agendado     { background-color: #2196F3; }
+.status-em_andamento { background-color: #FB8C00; }
+.status-concluido    { background-color: #4CAF50; }
+.status-cancelado    { background-color: #e53935; }
+
+#mensagem {
+    text-align: center;
+    margin-top: 15px;
+    min-height: 1.2em;
+    color: #ff6b6b;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/cadastro-produtos.css">
+    <link rel="stylesheet" href="../static/css/comum.css">
+    <title>Cadastro de Produto - Pet Shop</title>
+
+    <script src="../static/js/auth.js"></script>
+    <script>exigirLogin();</script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <form id="produtoForm">
+            <h3 id="titulo-form">Cadastro de Produto</h3>
+
+            <section>
+                <label for="nome">Nome do produto:</label>
+                <input type="text" id="nome" name="nome" required maxlength="100" placeholder="Ex.: Shampoo neutro 500ml">
+            </section>
+
+            <section>
+                <label for="preco">Preço (R$):</label>
+                <input type="number" id="preco" name="preco" required min="0" max="999999.99" step="0.01" placeholder="0,00">
+            </section>
+
+            <section>
+                <label for="estoque">Estoque (unidades):</label>
+                <input type="number" id="estoque" name="estoque" required min="0" step="1" placeholder="0">
+            </section>
+
+            <button type="submit" id="botao-cadastrar">Cadastrar</button>
+            <a href="produtos.html" class="link-voltar">Voltar para a lista</a>
+
+            <p id="mensagem"></p>
+        </form>
+    </main>
+
+    <script src="../static/js/comum.js"></script>
+    <script src="../static/js/header.js"></script>
+    <script src="../static/js/inatividade.js"></script>
+    <script src="../static/js/cadastro-produto.js"></script>
+</body>
+</html>

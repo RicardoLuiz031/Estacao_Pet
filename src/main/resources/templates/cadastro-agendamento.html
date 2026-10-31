@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/cadastro-agendamento.css">
+    <link rel="stylesheet" href="../static/css/comum.css">
+    <title>Agendar Serviço - Pet Shop</title>
+
+    <script src="../static/js/auth.js"></script>
+    <script>exigirLogin();</script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <form id="agendamentoForm">
+            <h3>Agendar Serviço</h3>
+
+            <fieldset>
+                <legend>Pet</legend>
+                <section>
+                    <label for="pet">Selecione o pet:</label>
+                    <select id="pet" name="pet" required>
+                        <option value="">Carregando pets...</option>
+                    </select>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Serviço</legend>
+                <div class="opcoes-servico" id="grupo-servico">
+                    <label class="opcao">
+                        <input type="radio" name="servico" value="BANHO" required>
+                        <span>Banho</span>
+                    </label>
+                    <label class="opcao">
+                        <input type="radio" name="servico" value="TOSA">
+                        <span>Tosa</span>
+                    </label>
+                    <label class="opcao">
+                        <input type="radio" name="servico" value="BANHO_E_TOSA">
+                        <span>Banho e Tosa</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Data e Horário</legend>
+                <section>
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+                </section>
+                <section>
+                    <label for="horario">Horário:</label>
+                    <select id="horario" name="horario" required>
+                        <option value="">Selecione o horário</option>
+                    </select>
+                </section>
+            </fieldset>
+
+            <button type="submit" id="botao-agendar">Agendar</button>
+            <a href="agendamentos.html" class="link-voltar">Voltar para a lista</a>
+
+            <p id="mensagem"></p>
+        </form>
+    </main>
+
+    <script src="../static/js/comum.js"></script>
+    <script src="../static/js/header.js"></script>
+    <script src="../static/js/inatividade.js"></script>
+    <script src="../static/js/agendamento.js"></script>
+</body>
+</html>

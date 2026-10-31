@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/cadastro.css">
+    <link rel="stylesheet" href="../static/css/comum.css">
+    <title>Cadastro de Pet - Estação Pet</title>
+
+    <script src="../static/js/auth.js"></script>
+    <script>exigirLogin();</script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <div class="titulo-site">
+        <h1>Estação Pet</h1>
+    </div>
+
+    <main>
+        <form id="cadastroForm">
+            <h3 id="titulo-form">Cadastro de Pet</h3>
+
+            <fieldset>
+                <legend>Dados do Pet</legend>
+
+                <section>
+                    <label for="nome">Nome:*<br></label>
+                    <input type="text" id="nome" name="nome" required maxlength="200" placeholder="Rex">
+                </section>
+
+                <section>
+                    <label for="especie">Espécie:*<br></label>
+                    <input type="text" id="especie" name="especie" required maxlength="150" placeholder="Cachorro">
+                </section>
+
+                <section>
+                    <label for="raca">Raça:*<br></label>
+                    <input type="text" id="raca" name="raca" required maxlength="100" placeholder="Pastor Alemão">
+                </section>
+
+                <section>
+                    <label for="idade">Idade:*<br></label>
+                    <input type="text" id="idade" name="idade" required maxlength="150" placeholder="3 anos">
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tutor</legend>
+
+                <section>
+                    <label for="tutor">Tutor responsável:*<br></label>
+                    <select id="tutor" name="tutor" required>
+                        <option value="">Carregando tutores...</option>
+                    </select>
+                </section>
+            </fieldset>
+
+            <button type="submit" id="botao-cadastrar">Cadastrar</button>
+            <a href="pets.html" class="link-voltar">Voltar para a lista</a>
+
+            <p id="mensagem"></p>
+        </form>
+    </main>
+
+    <script src="../static/js/comum.js"></script>
+    <script src="../static/js/header.js"></script>
+    <script src="../static/js/inatividade.js"></script>
+    <script src="../static/js/cadastro-pet.js"></script>
+</body>
+</html>

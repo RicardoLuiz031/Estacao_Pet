@@ -1,0 +1,14 @@
+Atualizações
+
+Refatorado a raiz do projeto
+Melhora nas classes e POO
+Melhora na organização de pasta MVN
+Adicionado Repository correto
+Adicionado service
+Adicionado Controller(Falta metodo)
+Refatoração dos Model corretos e com relação ao banco
+Atribuição do JPA/Hibernate
+Adicionado Spring Security (Só colocar no metodo)
+Refatoração no banco de dados para ficar correto ao back-end
+OBSERVAÇÃO: Colocar exatamente o nome no front no back para atribuir os dados
+Interligação feita com JPA no Back-end usando a ultima versão do MySQL Conecction

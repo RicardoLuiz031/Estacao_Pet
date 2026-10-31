@@ -1,0 +1,151 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-container {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartao {
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #333;
+    box-sizing: border-box;
+}
+
+.cartao h3 {
+    text-align: center;
+    margin: 5px 0 20px 0;
+}
+
+/* Dados do usuário */
+.dados {
+    background-color: #2b2b2b;
+    border: 1px solid #555;
+    border-radius: 12px;
+    padding: 5px 15px;
+}
+
+.dado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #444;
+}
+
+.dado:last-child {
+    border-bottom: none;
+}
+
+.rotulo {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.valor {
+    font-weight: bold;
+    word-break: break-all;
+    text-align: right;
+}
+
+.selo {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+}
+
+/* Formulário de senha */
+#senhaForm section {
+    margin-bottom: 15px;
+}
+
+#senhaForm input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #222;
+    color: white;
+}
+
+#senhaForm input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+#botao-salvar {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px auto 0 auto;
+    width: 70%;
+    font-weight: bold;
+}
+
+#botao-salvar:hover {
+    background-color: #45a049;
+}
+
+#botao-salvar:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+#botao-sair {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #e53935;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+    width: 70%;
+}
+
+#botao-sair:hover {
+    background-color: #e53935;
+}
+
+#mensagem {
+    text-align: center;
+    margin-top: 15px;
+    min-height: 1.2em;
+}
+
+#mensagem.erro {
+    color: #ff6b6b;
+}
+
+#mensagem.sucesso {
+    color: #4CAF50;
+}

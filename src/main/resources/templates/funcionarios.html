@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/lista-style.css">
+    <link rel="stylesheet" href="../static/css/comum.css">
+    <title>Funcionários - Pet Shop</title>
+
+    <script src="../static/js/auth.js"></script>
+    <script>exigirAdmin();</script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <h2 class="titulo-pagina">Funcionários</h2>
+
+        <div class="barra-acoes">
+            <input type="text" id="busca" placeholder="Buscar por e-mail">
+            <a href="cadastro-funcionario.html" class="botao-novo">+ Novo funcionário</a>
+        </div>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Acesso</th>
+                        <th class="col-acoes">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo">
+                    <tr><td colspan="4" class="vazio">Carregando...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p id="mensagem"></p>
+    </main>
+
+    <script src="../static/js/comum.js"></script>
+    <script src="../static/js/header.js"></script>
+    <script src="../static/js/inatividade.js"></script>
+    <script src="../static/js/funcionarios.js"></script>
+</body>
+</html>

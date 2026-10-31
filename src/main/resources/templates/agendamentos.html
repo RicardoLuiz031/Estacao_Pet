@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/lista-style.css">
+    <link rel="stylesheet" href="../static/css/comum.css">
+    <title>Agendamentos - Pet Shop</title>
+
+    <script src="../static/js/auth.js"></script>
+    <script>exigirLogin();</script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <h2 class="titulo-pagina">Agendamentos</h2>
+
+        <div class="barra-acoes">
+            <div class="filtros">
+                <input type="date" id="filtro-data" title="Filtrar por data">
+                <select id="filtro-status" title="Filtrar por status">
+                    <option value="">Todos os status</option>
+                    <option value="AGENDADO">Agendado</option>
+                    <option value="EM_ANDAMENTO">Em andamento</option>
+                    <option value="CONCLUIDO">Concluído</option>
+                    <option value="CANCELADO">Cancelado</option>
+                </select>
+                <button type="button" id="botao-limpar" class="btn-limpar">Limpar</button>
+                <button type="button" id="botao-exportar" class="btn-limpar">Exportar CSV</button>
+            </div>
+            <a href="cadastro-agendamento.html" class="botao-novo">+ Novo agendamento</a>
+        </div>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Horário</th>
+                        <th>Pet</th>
+                        <th>Serviço</th>
+                        <th>Status</th>
+                        <th class="col-acoes">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo">
+                    <tr><td colspan="6" class="vazio">Carregando...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p id="mensagem"></p>
+    </main>
+
+    <script src="../static/js/comum.js"></script>
+    <script src="../static/js/header.js"></script>
+    <script src="../static/js/inatividade.js"></script>
+    <script src="../static/js/agendamentos.js"></script>
+</body>
+</html>

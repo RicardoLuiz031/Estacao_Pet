@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="../static/css/comum.css">
+    <title>Início - Pet Shop</title>
+
+    <script src="../static/js/auth.js"></script>
+    <script>exigirLogin();</script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <h2 id="saudacao">Olá!</h2>
+        <p class="data-hoje" id="data-hoje"></p>
+
+        <section class="cards">
+            <div class="card-resumo">
+                <span class="card-rotulo">Agendamentos de hoje</span>
+                <span class="card-numero" id="total-agendamentos">-</span>
+            </div>
+            <div class="card-resumo">
+                <span class="card-rotulo">Total de clientes</span>
+                <span class="card-numero" id="total-clientes">-</span>
+            </div>
+        </section>
+
+        <section class="bloco">
+            <div class="bloco-topo">
+                <h3>Agendamentos de hoje</h3>
+                <a href="./cadastro-agendamento.html" class="botao-novo">+ Novo agendamento</a>
+            </div>
+
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Pet</th>
+                            <th>Serviço</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-corpo">
+                        <tr><td colspan="4" class="vazio">Carregando...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="mensagem"></p>
+        </section>
+    </main>
+
+    <script src="../static/js/comum.js"></script>
+    <script src="../static/js/header.js"></script>
+    <script src="../static/js/inatividade.js"></script>
+    <script src="../static/js/home.js"></script>
+</body>
+</html>

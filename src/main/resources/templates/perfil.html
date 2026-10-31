@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/perfil.css">
+    <link rel="stylesheet" href="../static/css/comum.css">
+    <title>Perfil - Pet Shop</title>
+
+    <script src="../static/js/auth.js"></script>
+    <script>exigirLogin();</script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <section class="cartao">
+            <h3>Meu Perfil</h3>
+
+            <div class="dados">
+                <div class="dado">
+                    <span class="rotulo">Usuário</span>
+                    <span class="valor" id="perfil-usuario">-</span>
+                </div>
+                <div class="dado">
+                    <span class="rotulo">Tipo de acesso</span>
+                    <span class="valor"><span class="selo" id="perfil-tipo">-</span></span>
+                </div>
+            </div>
+        </section>
+
+        <form id="senhaForm" class="cartao">
+            <h3>Alterar senha</h3>
+
+            <section>
+                <label for="senha-atual">Senha atual:</label>
+                <input type="password" id="senha-atual" required autocomplete="current-password" placeholder="********">
+            </section>
+
+            <section>
+                <label for="senha-nova">Nova senha:</label>
+                <input type="password" id="senha-nova" required minlength="6" maxlength="72" autocomplete="new-password" placeholder="********">
+            </section>
+
+            <section>
+                <label for="senha-confirmar">Confirmar nova senha:</label>
+                <input type="password" id="senha-confirmar" required minlength="6" maxlength="72" autocomplete="new-password" placeholder="********">
+            </section>
+
+            <button type="submit" id="botao-salvar">Salvar nova senha</button>
+
+            <p id="mensagem"></p>
+        </form>
+
+        <button type="button" id="botao-sair">Sair da conta</button>
+    </main>
+
+    <script src="../static/js/comum.js"></script>
+    <script src="../static/js/header.js"></script>
+    <script src="../static/js/inatividade.js"></script>
+    <script src="../static/js/perfil.js"></script>
+</body>
+</html>

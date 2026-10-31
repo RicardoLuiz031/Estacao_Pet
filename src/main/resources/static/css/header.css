@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    
+    /* Fundo preto semi-transparente com vidro fosco */
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    display: flex;
+    flex-wrap: wrap;            /* telas pequenas: o menu quebra em linhas */
+    justify-content: center; /* Centraliza as opções */
+    align-items: center;
+    gap: 10px 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 25px; /* Espaçamento entre os itens do menu */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase; /* Estilo moderno minimalista */
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+/* Efeito ao passar o mouse */
+.nav-item:hover {
+    color: #4CAF50;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Página atual */
+.nav-item.ativo {
+    color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.12);
+}
+
+/* Botão Sair */
+.nav-sair {
+    color: #ff6b6b;
+}
+
+.nav-sair:hover {
+    color: white;
+    background-color: #e53935;
+}
